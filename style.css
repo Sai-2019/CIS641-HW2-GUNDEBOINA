@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header ul {
+    list-style: none;
+  }
+  
+  header ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background: linear-gradient(45deg, rgba(29, 161, 242, 0.6), rgba(58, 123, 213, 0.6)), url('background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .hero-gif img {
+    max-width: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #hero h1 {
+    font-size: 4rem;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    background-color: #f1356d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff576e;
+  }
+  
+  #about, #projects, #skills, #contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-gif {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    background-color: #f1356d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .about-gif {
+    max-width: 50%;
+    margin-top: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  

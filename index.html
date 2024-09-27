@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Bharadwaj Gundeboina</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
-        }
-        h1, h2 {
-            color: #444;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .name {
-            text-align: center;
-        }
-        p {
-        	justify-content: "space-evenly"
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="name">Sai Bharadwaj</h1>
-            <p class="name"><strong>Email:</strong> Saibharat20@gmail.com | <strong>Phone:</strong> (616)329-5146</p>
-            <p class="name">Walker, MI 49534</p>
-        </header>
-        <section>
-            <h2>Professional Summary</h2>
-            <p>Highly analytical and detail-oriented Data Analyst with a strong background in data analysis, reporting, and visualization. Skilled in leveraging data to identify trends and provide actionable insights, enhancing operational and business practices within organizations and higher education sectors. Proficient in SQL, Business Intelligence tools, and data mining techniques, adept at project management and stakeholder relationships.</p>
-        </section>
-        <section>
-            <h2>Professional Experience</h2>
-            <h3>Data Analyst at Capgemini</h3>
-            <p><i>October 2021 - July 2023</i></p>
-            <ul>
-                <li>Enhanced data accuracy through advanced analytics in transaction monitoring.</li>
-                <li>Boosted report reliability with robust quality checks and report generation for transparency and accuracy.</li>
-                <li>Optimized data processes utilizing DataStage, Teradata, and Oracle, improving workflow efficiency.</li>
-                <li>Analyzed monthly transaction trends to predict potential issues and implemented solutions.</li>
-                <li>Performed quality assurance on new reporting solutions, ensuring high standards of delivery.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p><Strong>Master’s in Applied Computer Science, Expected 2025</Strong></p>
-            <p><i>Grand Valley State University, MI — GPA: 3.43<i></p>
-            <br>
-            <p><Strong>Bachelor of Technology in Mechanical Engineering, 2021</Strong></p>
-            <p>Geethanjali College of Engineering and Technology, India — CGPA: 8.01</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ol>
-                <li>Languages: C, SQL, Python, HTML, CSS</li>
-                <li>Databases: Microsoft SQL Server, Oracle, Teradata, MongoDB</li>
-                <li>Tools/IDEs: Visual Studio Code, Eclipse, DataStage, UNIX</li>
-                <li>Business Intelligence: Proficient in Microsoft PowerBI</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Achievements & Projects</h2>
-            <ol>
-                <li>Engaged in multiple Machine Learning projects.</li>
-                <li>Designed and manufactured a UAV for the Society of Automotive Engineering, receiving accolades.</li>
-                <li>Coordinated live broadcasts and managed events for an Esports organization.</li>
-                <li>Volunteered in the National Service Scheme, leading environmental and health awareness campaigns.</li>
-            </ol>
-        </section>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hey, I'm [Your Name]</h1>
+      <p>A Creative Developer and Designer</p>
+      <button id="viewProjectsBtn">See My Work</button>
     </div>
+    <div class="hero-gif">
+      <img src="hero-animation.gif" alt="Interactive animation" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a developer and designer with a passion for creating visually striking and high-performing websites and applications.</p>
+    <img src="about-me.gif" alt="About Me GIF" class="about-gif">
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Project 1</h3>
+        <img src="project1.gif" alt="Project 1 GIF" class="project-gif">
+        <p>This project demonstrates my skills in [technology].</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <img src="project2.gif" alt="Project 2 GIF" class="project-gif">
+        <p>This project is focused on [technology].</p>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <img src="project3.gif" alt="Project 3 GIF" class="project-gif">
+        <p>This project highlights [technology].</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
 </body>
 </html>
